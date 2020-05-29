@@ -1,0 +1,25 @@
+{
+  "name": "Instablam",
+  "short_name": "Instablam",
+  "start_url": "/",
+  "background_color": "#fef6e8",
+  "theme_color": "#be8d4c",
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en-US",
+  "description": "Sharon's instablam app",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "image/icon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "image/icon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

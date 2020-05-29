@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/icon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Welcome to my instablam</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="margin-bottom-40">
+        <h1 class="font-mono-monospace center-align"> Welcome to instablam</h1>
+        <h2 class="font-grace-cursive margin-zero center-align">"Collect moments, not things"</h2>
+    </header class="center-align">
+    <!-- Screen shot and subscribe notification buttons -->
+    <div class="buttons center-align ">
+        <button id="addImage" class="snap-btn"><span class="icon"></span><span class="text font-mono-monospace">SNAP
+                ME</span></button>
+        <button id="notify" class="notification-btn"><span class="icon"></span><span
+                class="text font-mono-monospace">SUBSCRIBE</span></button>
+    </div>
+    <!-- Video streaming container-->
+    <div class="video-container center-align margin-bottom-40">
+        <video id="me" class="camera"></video>
+    </div>
+    <!-- Photo display container -->
+    <div class="my-shot">
+        <h2 class="font-grace-cursive margin-zero center-align">The awesome photo</h2>
+        <div class="canvas-container center-align">
+            <img src="" id="photo" />
+        </div>
+    </div>
+    <!-- Message display container -->
+    <h2 class="no-photo font-grace-cursive margin-zero">
+    </h2>
+    <!-- Reset and save image buttons -->
+    <div class="buttons center-align">
+        <button class="reset-btn"><span class="icon"></span><span class="text  font-mono-monospace">RESET
+                FILTER</span></button>
+        <button class="save-btn"><span class="icon"></span><span class="text font-mono-monospace"><a href=""
+                    id="save">SAVE
+                    IMAGE</a></span></button>
+    </div>
+    <!-- Filter sliders -->
+    <div class="filters font-mono-monospace">
+        <form id="my-form">
+            <div class="filter">
+                <label>Brightness </label>
+                <input type="range" min="-50" max="50" id="bright" step="1" value="0" class="filter-input bright ">
+                <span class="valueBright margin-left-20"></span>
+            </div>
+            <div class="filter">
+                <label>Saturation</label>
+                <input type="range" min="-100" max="100" id="saturation" step="0.1" value="0"
+                    class="filter-input saturation">
+                <span class="valueSaturation margin-left-20"></span>
+            </div>
+            <div class="filter">
+                <label>StackBlur</label>
+                <input type="range" min="0" max="20" id="blurStack" step="1" value="0" class="filter-input blurStack">
+                <span class="valueBlur margin-left-20"></span>
+            </div>
+            <div class="filter">
+                <label>Hue</label>
+                <input type="range" min="0" max="100" id="hue" step="1" value="0" class="filter-input hue">
+                <span class="valueHue margin-left-20"></span>
+            </div>
+            <div class="filter">
+                <label>Sepia</label>
+                <input type="range" min="0" max="100" id="sepia" step="1" value="0" class="filter-input sepia">
+                <span class="valueSepia margin-left-20"></span>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="CamanJS-4.1.1/CamanJS-4.1.1/dist/caman.full.min.js"></script>
+    <script type="module" src="/js/index.js"></script>
+</body>
+
+</html>

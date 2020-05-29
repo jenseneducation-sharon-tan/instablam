@@ -1,0 +1,9 @@
+{
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "D:/Sharon-school/AdvanceradWebb/SSL/localhost+1.pem",
+    "key": "D:/Sharon-school/AdvanceradWebb/SSL/localhost+1-key.pem",
+    "passphrase": "Din valda passphrase"
+  },
+  "liveServer.settings.port": 5051
+}
