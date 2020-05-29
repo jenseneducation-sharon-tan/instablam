@@ -4,4 +4,4 @@ function requestNotificationPermission() {
   });
 }
 
-export { requestNotificationPermission /* , createNotification */ };
+export { requestNotificationPermission };

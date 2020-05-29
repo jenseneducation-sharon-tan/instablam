@@ -65,32 +65,6 @@ export default () => {
     });
   });
 
-  /* }
-
-    //Hämtar eventuell subscription och ifall vi har en så gör vi en unsubscribe
-    //Ifall vi inte har subscription så börjar vi prenumerera på notiser och skickar till servern
-    //Vår subscription
-    servicew.pushManager.getSubscription().then(async (subscription) => {
-      if (subscription) {
-        subscription.unsubscribe(); //Sluta prenumerera på push notiser
-        event.srcElement.disabled = false;
-      } else {
-        try {
-          //Börja prenumerera på push notiser och returnerar en subscription med en endpoint
-          //som vi sparar på servern
-          const subscribed = await servicew.pushManager.subscribe({
-            userVisibleOnly: true,
-            applicationServerKey: urlB64ToUint8Array(publicKey),
-          });
-          saveSubscription(subscribed);
-          console.log(subscribed);
-          createNotification(subscribed);
-          event.srcElement.disabled = false;
-        } catch (error) {}
-      }
-    });
-  }); */
-
   function createNotification() {
     const icon = "image/icon/apple-touch-icon.png";
     const message = "Thank you for subscribing to our notification";

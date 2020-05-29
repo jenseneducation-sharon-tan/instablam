@@ -82,12 +82,10 @@ async function captureImage(stream) {
     document.querySelector("#photo").removeAttribute("data-caman-id");
     const changeImage = imgUrl;
     newImg = changeImage;
-    console.log(newImg);
     resetFilter();
     filter();
   } else {
     newImg = imgUrl;
-    console.log(newImg);
     filter();
   }
 }
@@ -204,7 +202,6 @@ function filter() {
       e.preventDefault();
       let value = parseInt(bright.value);
       spanValueBright.innerHTML = value;
-      console.log(spanValueBright.innerHTML);
       adjustBrightness(value);
     });
 
@@ -212,7 +209,6 @@ function filter() {
       e.preventDefault();
       let value = parseInt(saturation.value);
       spanValueSaturation.innerHTML = value;
-      console.log(spanValueSaturation.innerHTML);
       adjustSaturation(value);
     });
 
@@ -220,7 +216,6 @@ function filter() {
       e.preventDefault();
       let value = parseInt(stackBlur.value);
       spanValueBlur.innerHTML = value;
-      console.log(spanValueBlur.innerHTML);
       adjustStackBlur(value);
     });
 
@@ -228,7 +223,6 @@ function filter() {
       e.preventDefault();
       let value = parseInt(hue.value);
       spanValueHue.innerHTML = value;
-      console.log(spanValueHue.innerHTML);
       adjustHue(value);
     });
 
@@ -236,7 +230,6 @@ function filter() {
       e.preventDefault();
       let value = parseInt(sepia.value);
       spanValueSepia.innerHTML = value;
-      console.log(spanValueSepia.innerHTML);
       adjustSepia(value);
     });
   });
