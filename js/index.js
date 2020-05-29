@@ -259,7 +259,7 @@ function resetFilter() {
   spanValueSepia.innerHTML = 0;
   oldValueSepia = 0;
   Caman("#photo", newImg, function () {
-    this.reload;
+    this.reloadCanvasData();
     this.revert();
   });
   console.log("Filter reset");
